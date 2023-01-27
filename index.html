@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - GP</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main id="main-container">
+        <img class="logo" src="./src/Logo.png" alt="Logo Alura Latam">
+        <label for="mensaje">
+            <input type="text" id="ingrese-texto" name="mensaje" value="" placeholder="Ingrese el texto aquí" onkeypress="return solominusculas(event)">
+        </label>
+        <div id="text-aviso">
+            <img class="exclamacion" src="./src/Exclamacion.png" alt="Exclamacion">
+            <h3 class="minusculas">Solo letras minúsculas y sin acentos.</h3>
+        </div>
+        <div id="buttons">
+            <button class="encriptar">Encriptar</button>
+            <button class="desencriptar">Desencriptar</button>
+        </div>
+        <div id="mostrar">
+            <div>
+                <label for="message">
+                    <input type="text" id="mostrarEncriptado" readonly="true">
+                </label>    
+                <span>Copiado en el portapapeles!</span> 
+            </div>
+            <div id="elementos">
+                <img class="muñeco" src="./src/Muñeco.png" alt="Muñeco">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+           <button class="copiar">Copiar</button> 
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

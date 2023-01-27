@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --main-bg-color: #F3F5FC;
+    --blue: #0A3871;
+    --gray: #D8DFE8;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+#main-container .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 230px;
+    height: 90px;
+    left: 40px;
+    top: 55px;
+}
+
+#main-container label #ingrese-texto {
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    border: none;
+    background: none;
+    left: 250px;
+    top: 200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+#ingrese-texto::placeholder {
+    color: #0A3871;
+}
+
+#main-container #text-aviso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    
+    width: 380px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+#main-container #text-aviso .minusculas{
+    margin-left: 8px;
+    color: #495057;
+    opacity: 0.5;
+}
+
+#main-container #text-aviso .exclamacion{
+    width: 22px;
+}
+
+#main-container #mostrar {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    /* White */
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#main-container #buttons {
+    display: flex;  
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+    
+}
+
+#main-container #buttons .encriptar {
+    /* Auto layout */
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    /* Inside auto layout */
+    order: 0;
+    color: white;
+    font-size: 1em;
+    margin-right: 1.2em;
+    cursor: pointer;
+}
+
+#main-container #buttons .desencriptar {
+    width: 328px;
+    height: 67px;
+    /* Light gray */
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    color: var(--blue);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#main-container #mostrar #mostrarEncriptado{
+    border-style: none;
+    position: absolute;
+    top: 20px;
+    font-size: 1.8em;
+    margin-left: 20px;
+    width: 360px;
+}   
+
+#main-container #mostrar span {
+    position: absolute;
+    top: 46.5em;
+    left: 4.5em;
+    font-size: 1.1em;
+}
+
+#main-container #mostrar .muñeco {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 35px;
+    top: 270px;
+    
+}
+
+#main-container #mostrar h2 {
+    position: absolute;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    margin: 0 13px;
+    top: 25em;
+}
+#main-container #mostrar p {
+    position: absolute;
+    top: 41.7em;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    margin: 0 13px;
+
+}
+
+#main-container #mostrar button {
+    margin-top: 52.8em;
+    margin-left: 5.5em;
+    width: 220px;
+    height: 60px;
+    /* Light gray */
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    color: var(--blue);
+    font-size: 1em;
+    cursor: pointer;
+    
+
+}
